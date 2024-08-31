@@ -1,0 +1,20 @@
+@startuml
+
+start
+:Navegar a la configuración de privacidad;
+:Mostrar opciones de privacidad;
+if (Usuario selecciona opciones de privacidad) then (sí)
+  :Actualizar preferencias de privacidad;
+  :Guardar configuración;
+else (no)
+  :Mantener configuración actual;
+endif
+:Mostrar consentimiento de procesamiento de datos;
+if (Usuario da su consentimiento) then (sí)
+  :Guardar consentimiento;
+else (no)
+  :Denegar procesamiento de datos;
+endif
+stop
+
+@enduml
