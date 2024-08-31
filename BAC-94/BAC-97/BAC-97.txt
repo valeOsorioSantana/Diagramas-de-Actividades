@@ -1,0 +1,19 @@
+@startuml
+
+start
+:Acceder a la plataforma de eventos;
+:Seleccionar evento;
+:Acceder a la lista de asistentes;
+:Redactar mensaje;
+:Seleccionar destinatarios;
+if (Mensaje es relevante?) then (sí)
+  :Enviar mensaje a asistentes;
+  :Confirmar envío;
+else (no)
+  :Revisar y ajustar mensaje;
+endif
+:Monitorear respuestas y confirmaciones;
+:Actualizar registros de comunicación;
+stop
+
+@enduml

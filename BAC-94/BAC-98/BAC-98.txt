@@ -1,0 +1,20 @@
+@startuml
+
+start
+:Acceder a la plataforma de eventos;
+:Seleccionar evento;
+:Acceder al foro o chat del evento;
+:Escribir mensaje o pregunta;
+:Enviar mensaje;
+:Recibir respuesta;
+if (Respuesta recibida?) then (sí)
+  :Leer respuesta;
+  :Responder si es necesario;
+else (no)
+  :Esperar respuesta;
+endif
+:Actualizar hilo de conversación;
+:Monitorear actividad en el foro/chat;
+stop
+
+@enduml
