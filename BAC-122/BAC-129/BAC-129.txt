@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Iniciar creación de plantilla;
+:Seleccionar tipo de plantilla;
+:Definir estructura y contenido;
+:Personalizar diseño y formato;
+:Agregar elementos repetitivos;
+:Revisar plantilla creada;
+if (Plantilla correcta) then (sí)
+  :Guardar y compartir plantilla;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml

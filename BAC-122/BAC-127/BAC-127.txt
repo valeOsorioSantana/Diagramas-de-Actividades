@@ -1,0 +1,18 @@
+@startuml
+
+start
+:Iniciar creación de ERD;
+:Identificar entidades;
+:Definir atributos de las entidades;
+:Identificar relaciones entre entidades;
+:Definir cardinalidades;
+:Crear el diagrama de entidad-relación;
+:Revisar y validar el ERD;
+if (ERD correcto) then (sí)
+  :Guardar y compartir el ERD;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml

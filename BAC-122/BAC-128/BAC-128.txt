@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Iniciar creación de wireframes;
+:Identificar requisitos de la interfaz de usuario;
+:Definir estructura y diseño básico;
+:Crear wireframes para cada pantalla;
+:Agregar anotaciones y detalles importantes;
+:Revisar y ajustar los wireframes;
+if (Wireframes correctos) then (sí)
+  :Guardar y compartir los wireframes;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml

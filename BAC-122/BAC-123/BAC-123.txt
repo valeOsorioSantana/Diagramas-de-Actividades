@@ -1,0 +1,18 @@
+@startuml
+
+start
+:Iniciar creación de DFD;
+:Identificar entidades externas;
+:Identificar procesos del sistema;
+:Identificar flujos de datos;
+:Identificar almacenes de datos;
+:Crear el diagrama de flujo de datos;
+:Revisar y validar el DFD;
+if (DFD correcto) then (sí)
+  :Guardar y compartir el DFD;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml
