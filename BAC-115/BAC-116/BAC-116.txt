@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Recopilar datos y requisitos;
+:Analizar los datos recopilados;
+:Identificar problemas y oportunidades;
+:Desarrollar recomendaciones;
+:Redactar el informe de análisis;
+:Revisar y validar el informe;
+if (Informe correcto) then (sí)
+  :Guardar y distribuir el informe;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml

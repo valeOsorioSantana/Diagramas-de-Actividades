@@ -1,0 +1,16 @@
+@startuml
+
+start
+:Recopilar requisitos y análisis realizados;
+:Identificar tareas y características necesarias;
+:Priorizar tareas y características;
+:Organizar tareas y características en el backlog;
+:Revisar y validar el backlog;
+if (Backlog completo) then (sí)
+  :Distribuir el backlog a los equipos de desarrollo;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml

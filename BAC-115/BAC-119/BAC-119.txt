@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Recopilar información y requisitos;
+:Identificar requisitos funcionales;
+:Identificar requisitos no funcionales;
+:Analizar y priorizar requisitos;
+:Elaborar el diagrama de requerimientos;
+:Revisar y validar el diagrama;
+if (Diagrama correcto) then (sí)
+  :Distribuir el diagrama a las partes interesadas;
+else (no)
+  :Realizar ajustes necesarios;
+endif
+stop
+
+@enduml
