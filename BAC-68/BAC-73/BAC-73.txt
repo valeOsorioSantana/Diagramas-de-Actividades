@@ -1,0 +1,19 @@
+@startuml
+start
+#bf99f9:Usuario inicia la solicitud de cancelación;
+:Verificar política del evento;
+if (Política permite reembolso?) then (sí)
+    #99f9e4:Calcular monto del reembolso;
+    #99f9e4:Solicitar confirmación del usuario;
+    if (Usuario confirma?) then (sí)
+        #99f9a3:Procesar reembolso;
+        #99f9a3:Enviar confirmación al usuario;
+        #99f9a3:Reembolso completado;
+    else (no)
+        #f99f99:Cancelar solicitud;
+    endif
+else (no)
+    #f99f99:Informar al usuario que no es posible el reembolso;
+endif
+stop
+@enduml

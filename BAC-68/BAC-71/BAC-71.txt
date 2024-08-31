@@ -1,0 +1,34 @@
+@startuml
+start
+
+:Seleccionar producto;
+#d099f9:Iniciar proceso de pago;
+
+split
+#99f9df:Seleccionar método de pago - Tarjeta de crédito;
+split again
+#99f9df:Seleccionar método de pago - PayPal;
+split again
+#99f9df:Seleccionar método de pago - Transferencia bancaria;
+end split
+
+if (Método de pago seleccionado correctamente) then (yes)
+  #palegreen:Verificar detalles de pago;
+else (no)
+  #pink:Mostrar error y reconfigurar método de pago;
+endif
+
+#d099f9:Confirmar transacción;
+
+:Procesar pago;
+
+if (Pago procesado correctamente) then (yes)
+  #palegreen:Mostrar confirmación de compra;
+else (no)
+  #pink:Mostrar mensaje de error;
+endif
+#d099f9:Generar recibo;
+
+
+stop
+@enduml

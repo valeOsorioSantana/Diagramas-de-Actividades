@@ -1,0 +1,18 @@
+@startuml
+start
+:Seleccionar evento;
+#a181f7:Verificar disponibilidad de entradas;
+
+if (Entradas disponibles?) then (yes)
+  #81f7e4:Seleccionar cantidad de entradas;
+  #81f7e4:Agregar al carrito;
+  #81f7e4:Proceder al pago;
+  #81f7e4:Realizar pago;
+  #81f7e4:Confirmar compra;
+else (no)
+  #f78c81:Mostrar mensaje de no disponibilidad;
+endif
+
+:Fin;
+stop
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+start
+#99f9ed:Recibir solicitud de generación de entradas;
+#99a5f9:Verificar compra exitosa;
+if (¿Compra exitosa?) then (Sí)
+  #9bf999:Generar entrada electrónica;
+  #9bf999:Enviar entrada por correo electrónico;
+  #9bf999:Notificar al usuario de la compra exitosa;
+else (No)
+  #f99c99:Notificar al usuario de fallo en la compra;
+endif
+stop
+@enduml
