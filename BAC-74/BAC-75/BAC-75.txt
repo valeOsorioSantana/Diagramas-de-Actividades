@@ -1,0 +1,22 @@
+@startuml
+start
+:Seleccionar evento a compartir;
+#b68cfa:Seleccionar red social;
+
+split 
+#8cacfa:Conectar con la red social;
+split again
+#8cacfa:Escribir mensaje personalizado;
+end split
+
+if (Conexión exitosa) then (yes)
+  #a0fa8c:Compartir evento;
+else (no)
+  #fa978c:Mostrar error de conexión;
+endif
+
+#b68cfa:Notificar al usuario que el evento fue compartido exitosamente;
+:Registrar la acción en la base de datos;
+
+stop
+@enduml

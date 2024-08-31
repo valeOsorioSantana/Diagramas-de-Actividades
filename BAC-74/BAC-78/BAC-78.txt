@@ -1,0 +1,26 @@
+@startuml
+
+start
+:El usuario inicia sesión en la aplicación;
+:Recuperar intereses y conexiones sociales del usuario;
+
+:Generar feed basado en intereses;
+if (¿Nuevas actividades basadas en intereses?) then (sí)
+  :Agregar actividades al feed;
+else (no)
+  :Pasar al siguiente paso;
+endif
+
+:Generar feed basado en conexiones sociales;
+if (¿Nuevas actividades de conexiones?) then (sí)
+  :Agregar actividades al feed;
+else (no)
+  :Pasar al siguiente paso;
+endif
+
+:Ordenar feed por relevancia;
+:Mostrar feed de actividad personalizado al usuario;
+
+stop
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+start
+:Seleccionar evento;
+#8cfaf0:Ingresar comentario y calificación;
+
+if (Comentario y calificación válidos?) then (sí)
+  #8cfa91:Guardar comentario y calificación;
+  #8cfa91:Mostrar mensaje de éxito;
+else (no)
+  #fa918c:Mostrar mensaje de error;
+endif
+
+#8cfaf0:Actualizar promedio de calificaciones del evento;
+:Mostrar nuevo promedio y comentarios;
+
+stop
+@enduml
