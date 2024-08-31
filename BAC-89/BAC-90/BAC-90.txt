@@ -1,0 +1,39 @@
+@startuml
+start
+:El organizador inicia sesión en la plataforma;
+:Seleccionar evento a gestionar;
+:Acceder a la sección de acuerdos de patrocinio;
+
+if (¿Agregar nuevo patrocinador?) then (sí)
+  :Ingresar detalles del patrocinador;
+  :Definir términos del acuerdo;
+  :Guardar acuerdo de patrocinio;
+else (no)
+endif
+
+if (¿Editar patrocinador existente?) then (sí)
+  :Seleccionar patrocinador;
+  :Modificar detalles del patrocinador;
+  :Actualizar términos del acuerdo;
+  :Guardar cambios;
+else (no)
+endif
+
+if (¿Eliminar patrocinador?) then (sí)
+  :Seleccionar patrocinador;
+  :Confirmar eliminación;
+  :Eliminar patrocinador de la lista;
+else (no)
+endif
+
+if (¿Revisar acuerdos de patrocinio?) then (sí)
+  :Visualizar lista de patrocinadores y acuerdos;
+  :Generar reportes de patrocinio;
+else (no)
+endif
+
+:Enviar notificaciones y actualizaciones a los patrocinadores;
+:Registrar actividad de patrocinio en el sistema;
+
+stop
+@enduml

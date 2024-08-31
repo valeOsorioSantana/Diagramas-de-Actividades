@@ -1,0 +1,26 @@
+@startuml
+
+start
+:El usuario inicia sesión en la aplicación;
+:Seleccionar evento de interés;
+:Acceder a la sección de patrocinadores y expositores;
+
+if (¿Ver patrocinadores?) then (sí)
+  :Mostrar lista de patrocinadores;
+  :Seleccionar patrocinador para ver detalles;
+  :Mostrar información detallada del patrocinador;
+else (no)
+endif
+
+if (¿Ver expositores?) then (sí)
+  :Mostrar lista de expositores;
+  :Seleccionar expositor para ver detalles;
+  :Mostrar información detallada del expositor;
+else (no)
+endif
+
+:Regresar a la sección principal del evento;
+
+stop
+
+@enduml

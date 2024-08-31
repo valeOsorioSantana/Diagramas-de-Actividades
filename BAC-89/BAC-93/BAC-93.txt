@@ -1,0 +1,20 @@
+@startuml
+start
+:El organizador inicia sesión en la plataforma de gestión de eventos;
+:Seleccionar evento específico;
+:Acceder a la sección de reportes;
+
+:Seleccionar tipo de reporte (patrocinadores o expositores);
+if (¿Seleccionar patrocinadores?) then (sí)
+  :Generar reporte de métricas para patrocinadores;
+  :Mostrar reporte con métricas detalladas (visitas al stand, interacciones, etc.);
+else (no)
+  :Generar reporte de métricas para expositores;
+  :Mostrar reporte con métricas detalladas (visitas al stand, interacciones, etc.);
+endif
+
+:Revisar y analizar el reporte;
+:Descargar o compartir reporte con patrocinadores y expositores;
+
+stop
+@enduml

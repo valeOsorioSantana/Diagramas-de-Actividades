@@ -1,0 +1,11 @@
+Facilitar la interacción entre patrocinadores y asistentes a través de la aplicación.
+
+Adjuntar
+
+Vincular incidencia
+
+
+Crear
+Descripción
+
+Como organizador de eventos o asistente interesado en oportunidades de networking y colaboración, Quiero contar con una funcionalidad en la aplicación que facilite la interacción entre patrocinadores y asistentes, Para aprovechar al máximo las oportunidades de establecer conexiones, obtener información sobre productos y servicios, y promover colaboraciones mutuamente beneficiosas durante el evento.
