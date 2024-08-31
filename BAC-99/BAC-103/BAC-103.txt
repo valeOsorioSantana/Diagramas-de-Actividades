@@ -1,0 +1,20 @@
+@startuml
+
+start
+:Acceder a la plataforma de eventos;
+:Recopilar datos de eventos y usuarios;
+:Analizar datos de eventos;
+:Analizar datos de usuarios;
+if (Identificar áreas de mejora?) then (sí)
+  :Evaluar efectividad de eventos;
+  :Evaluar necesidades y preferencias de usuarios;
+  :Desarrollar estrategias de mejora;
+  :Implementar cambios en eventos y plataforma;
+else (no)
+  :Revisar y ajustar parámetros de análisis;
+endif
+:Monitorear impacto de cambios;
+:Repetir análisis según sea necesario;
+stop
+
+@enduml

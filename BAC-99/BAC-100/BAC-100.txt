@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Navegar a la sección de eventos;
+:Seleccionar evento específico;
+if (Evento encontrado) then (sí)
+  :Recopilar datos de asistencia;
+  :Recopilar datos de participación;
+  :Analizar datos recopilados;
+  :Generar informe detallado;
+  :Guardar informe en la plataforma;
+else (no)
+  :Mostrar mensaje de evento no encontrado;
+endif
+stop
+
+@enduml

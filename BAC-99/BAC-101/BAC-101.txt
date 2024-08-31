@@ -1,0 +1,19 @@
+@startuml
+
+start
+:Acceder a la plataforma de análisis de datos;
+:Seleccionar conjunto de datos;
+:Preparar datos para análisis;
+:Aplicar técnicas de análisis;
+if (Identificar tendencias y patrones?) then (sí)
+  :Generar informes sobre tendencias;
+  :Generar informes sobre patrones;
+  :Revisar resultados y conclusiones;
+  :Tomar decisiones informadas;
+else (no)
+  :Revisar los datos y ajustar el análisis;
+endif
+:Guardar y compartir informes;
+stop
+
+@enduml
