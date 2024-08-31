@@ -1,0 +1,20 @@
+@startuml
+start
+:El administrador inicia sesión en la plataforma;
+:Seleccionar opción para agregar un nuevo evento;
+
+:Ingresar información básica del evento (nombre, fecha, ubicación);
+:Agregar detalles adicionales (descripción, categorías, horarios);
+
+if (¿Agregar imágenes?) then (sí)
+  :Subir imágenes al almacenamiento en línea;
+  :Guardar enlaces de imágenes en la base de datos;
+else (no)
+endif
+
+:Revisar y confirmar toda la información ingresada;
+:Guardar evento como borrador en la base de datos;
+:Mostrar confirmación de guardado exitoso;
+
+stop
+@enduml

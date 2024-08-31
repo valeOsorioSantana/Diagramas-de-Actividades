@@ -1,0 +1,32 @@
+@startuml
+
+start
+:El administrador inicia sesión en la plataforma;
+:Seleccionar opción para gestionar imágenes;
+
+if (¿Subir imágenes?) then (sí)
+  :Seleccionar imágenes desde el dispositivo;
+  :Subir imágenes al almacenamiento en línea;
+  :Confirmar subida exitosa;
+else (no)
+endif
+
+if (¿Organizar imágenes?) then (sí)
+  :Seleccionar imágenes;
+  :Mover imágenes a carpetas o categorías;
+  :Guardar organización;
+else (no)
+endif
+
+if (¿Eliminar imágenes?) then (sí)
+  :Seleccionar imágenes para eliminar;
+  :Confirmar eliminación;
+  :Eliminar imágenes del almacenamiento en línea;
+  :Confirmar eliminación exitosa;
+else (no)
+endif
+
+:Acceder a las imágenes para uso en eventos;
+stop
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+
+start
+:El organizador inicia sesión en la plataforma;
+:Seleccionar evento a gestionar;
+
+:Seleccionar opción para agregar información sobre oradores/presentadores;
+:Introducir información detallada sobre el orador/presentador;
+if (¿Información completa?) then (sí)
+  :Guardar información en la base de datos;
+  :Mostrar confirmación de que la información se ha guardado correctamente;
+else (no)
+  :Mostrar mensaje de error y solicitar información adicional;
+  :Introducir información detallada sobre el orador/presentador;
+  :Guardar información en la base de datos;
+  :Mostrar confirmación de que la información se ha guardado correctamente;
+endif
+
+:Mostrar detalles de los oradores/presentadores en la página del evento;
+
+stop
+
+@enduml
+

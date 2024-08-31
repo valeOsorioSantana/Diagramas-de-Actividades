@@ -1,0 +1,40 @@
+v+@startuml
+
+start
+:Ana inicia sesión en la aplicación de gestión;
+:Seleccionar la conferencia "Innovación para el Futuro";
+
+:Agregar información sobre oradores;
+if (¿Información completa?) then (sí)
+  :Guardar información del orador en la base de datos;
+  :Mostrar confirmación de que la información se ha guardado correctamente;
+else (no)
+  :Mostrar mensaje de error y solicitar información adicional;
+  :Introducir información adicional sobre el orador;
+  :Guardar información del orador en la base de datos;
+  :Mostrar confirmación de que la información se ha guardado correctamente;
+endif
+
+:Programar sesiones para los oradores;
+:Asignar horarios y salas para cada sesión;
+
+:Notificar a los oradores sobre detalles y cambios;
+if (¿Cambios en la programación?) then (sí)
+  :Enviar notificaciones automáticas a los oradores;
+else (no)
+  :Continuar con la programación;
+endif
+
+:Llega el día del evento;
+:Los asistentes acceden a la aplicación;
+
+:Mostrar horarios detallados de las sesiones;
+:Mostrar información sobre los oradores;
+
+:Los asistentes participan en las sesiones;
+:El evento transcurre sin contratiempos;
+
+stop
+
+@enduml
+

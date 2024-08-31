@@ -1,0 +1,19 @@
+@startuml
+start
+:El usuario abre la aplicación de eventos;
+:El usuario inicia sesión ;
+:Seleccionar el evento;
+
+:Solicitar horarios y detalles de las sesiones;
+:Obtener datos de las sesiones desde la base de datos;
+
+if (¿Datos disponibles?) then (sí)
+  :Mostrar horarios y detalles de las sesiones;
+  :El usuario revisa los horarios y detalles;
+else (no)
+  :Mostrar mensaje de error (datos no disponibles);
+endif
+
+:El usuario planifica su participación en las sesiones;
+stop
+@enduml
