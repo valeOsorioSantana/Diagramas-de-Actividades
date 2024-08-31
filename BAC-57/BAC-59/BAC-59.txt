@@ -1,0 +1,24 @@
+@startuml
+start
+#5df9f2:Inicio del registro;
+split
+:Ingreso de datos personales;
+split again
+:Ingreso de información de contacto;
+split again
+:Ingreso de preferencias del evento;
+end split
+
+if (¿Datos completos y correctos?) then (sí)
+  #5df96b:Registro completado;
+else (no)
+  #f9705d:Solicitar corrección de datos;
+  #f9705d:Reingreso de datos;
+endif
+
+:Guardar información en la base de datos;
+#6b5df9:Confirmar registro al asistente;
+#6b5df9:Enviar correo de confirmación;
+
+stop
+@enduml

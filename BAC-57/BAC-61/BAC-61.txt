@@ -1,0 +1,19 @@
+@startuml
+start
+:Ingresar a la plataforma;
+#6af85b:Seleccionar opción "Editar perfil";
+:Mostrar información actual del perfil;
+
+if (Datos son correctos?) then (yes)
+  #5bd0f8:Modificar información deseada;
+  #5bd0f8:Guardar cambios;
+  #5bd0f8:Confirmar actualización exitosa;
+  #5bd0f8:Mostrar perfil actualizado;
+else (no)
+  #f8655b:Mostrar mensaje de error;
+  #f8655b:Reintentar edición;
+endif
+
+#815bf8:Salir de la opción "Editar perfil";
+stop
+@enduml

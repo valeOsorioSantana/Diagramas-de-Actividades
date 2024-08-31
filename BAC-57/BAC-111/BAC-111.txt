@@ -1,0 +1,14 @@
+@startuml
+start
+ #815bf8:Ingresar credenciales;
+ :Validar credenciales;
+
+if (Credenciales válidas?) then (yes)
+  #5bf8ec:Acceso concedido;
+  #5bf8ec:Mostrar página principal;
+else (no)
+  #f8715b:Mostrar mensaje de error;
+endif
+
+stop
+@enduml

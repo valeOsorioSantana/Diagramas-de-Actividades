@@ -1,0 +1,15 @@
+@startuml
+
+start
+#5df9e4:Registro completado;
+#f99f5d:Generar confirmación de registro;
+:Obtener dirección de correo del usuario;
+if (¿Dirección de correo válida?) then (yes)
+  #935df9:Enviar correo de confirmación;
+  #935df9:Confirmación enviada;
+else (no)
+  #f43437:Error en la dirección de correo;
+endif
+stop
+
+@enduml

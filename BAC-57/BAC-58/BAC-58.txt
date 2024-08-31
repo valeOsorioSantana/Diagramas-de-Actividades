@@ -1,0 +1,23 @@
+@startuml
+start
+#f9ed5d:Inicio de Registro para Evento;
+
+:Ingresar Datos de Usuario;
+
+split
+#c4b0fb :Verificar Disponibilidad del Evento;
+split again
+#c4b0fb :Validar Información del Usuario;
+end split
+
+if (Información Válida) then (yes)
+  #palegreen:Registro Aceptado;
+else (no)
+  #f95d5d:Reintentar Registro;
+endif
+
+:Enviar Confirmación de Registro;
+#palegreen:Mostrar Información del Evento;
+
+stop
+@enduml
