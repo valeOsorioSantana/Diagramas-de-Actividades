@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Usuario recibe soporte;
+:Enviar invitación para encuesta de satisfacción;
+:Usuario abre la encuesta;
+if (Encuesta disponible) then (sí)
+  :Usuario completa la encuesta;
+  :Enviar respuestas de la encuesta;
+  :Guardar respuestas en la base de datos;
+  :Mostrar mensaje de agradecimiento;
+else (no)
+  :Mostrar mensaje de error;
+endif
+stop
+
+@enduml

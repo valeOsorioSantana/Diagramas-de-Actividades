@@ -1,0 +1,22 @@
+@startuml
+
+start
+:Usuario inicia interacción con el chatbot;
+:Mostrar mensaje de bienvenida;
+if (Usuario pregunta algo) then (sí)
+  :Buscar respuesta en la base de conocimientos;
+  if (Respuesta encontrada) then (sí)
+    :Mostrar respuesta al usuario;
+    :Usuario recibe la respuesta;
+  else (no)
+    :Conectar con agente de soporte en tiempo real;
+    :Agente de soporte responde;
+    :Mostrar respuesta del agente al usuario;
+    :Usuario recibe la respuesta;
+  endif
+else (no)
+  :Esperar la entrada del usuario;
+endif
+stop
+
+@enduml
