@@ -1,0 +1,23 @@
+@startuml
+start
+:Iniciar la aplicación;
+
+#ae93f6:Mostrar formulario de filtrado;
+
+split
+  #93f6db:Seleccionar fecha;
+split again
+  #93f6db:Seleccionar ubicación;
+split again
+  #93f6db:Seleccionar categoría;
+end split
+
+if (Filtros seleccionados correctamente?) then (yes)
+  #26f54b:Aplicar filtros;
+  #26f54b:Mostrar eventos filtrados;
+else (no)
+  #f52f26:Mostrar mensaje de error;
+endif
+
+stop
+@enduml

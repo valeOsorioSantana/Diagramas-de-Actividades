@@ -1,0 +1,21 @@
+@startuml
+start
+:Guardar evento;
+:Configurar recordatorio;
+split
+#b59dfb:Enviar notificación de confirmación al usuario;
+split again
+#b59dfb:Actualizar base de datos con la configuración del recordatorio;
+end split
+
+if (¿Configuración correcta?) then (sí)
+  #5bf115:Recordatorio activado;
+else (no)
+  #f12215:Reconfigurar recordatorio;
+endif
+
+#palegreen:Enviar recordatorio automático;
+#pink:Notificar al usuario;
+
+stop
+@enduml

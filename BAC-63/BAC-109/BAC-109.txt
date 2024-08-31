@@ -1,0 +1,25 @@
+@startuml
+start
+:Preparar información del evento;
+#af81f7:Obtener opciones de entrada;
+
+if (Información disponible) then (Si)
+  #c2fb9d:Mostrar información detallada del evento;
+  #c2fb9d:Mostrar opciones de entrada;
+else (No)
+  #f25f53:Mostrar mensaje de error;
+  #f25f53:Solicitar recarga de la página;
+endif
+
+:Permitir selección de entradas;
+#9253f2:Confirmar selección;
+
+if (Selección correcta) then (Si)
+  #c2fb9d:Mostrar confirmación;
+else (No)
+  #f25f53:Mostrar mensaje de error;
+  #f25f53:Permitir reintento;
+endif
+
+stop
+@enduml

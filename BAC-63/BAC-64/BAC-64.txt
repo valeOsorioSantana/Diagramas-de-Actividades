@@ -1,0 +1,17 @@
+@startuml
+start
+#f6947f:Mostrar página de inicio;
+:Inicia sesión;
+#a7f67f:Mostrar página de calendario;
+
+if (¿El usuario está autenticado?) then (sí)
+    #43f731:Mostrar eventos del calendario;
+else (no)
+    #f32424:Mostrar mensaje de error;
+endif
+
+:Usuario selecciona evento;
+#24bef3:Mostrar detalles del evento;
+
+stop
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+start
+ :Seleccionar evento;
+ #f9a4ed:Guardar evento en el calendario personal;
+
+if (¿Evento guardado exitosamente?) then (Sí)
+  #a4f9e7:Mostrar confirmación de guardado;
+  #a4f9e7:Recibir recordatorios del evento;
+
+else (No)
+  #f12215:Mostrar mensaje de error;
+endif
+
+stop
+@enduml
