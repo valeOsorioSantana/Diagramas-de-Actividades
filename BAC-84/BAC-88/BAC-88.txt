@@ -1,0 +1,28 @@
+@startuml
+start
+:El usuario inicia sesión en la plataforma;
+:El usuario selecciona la opción para seguir eventos, oradores y temas;
+
+if (¿Seguir evento?) then (sí)
+  :Seleccionar evento a seguir;
+  :Registrar evento seguido;
+else (no)
+endif
+
+if (¿Seguir orador?) then (sí)
+  :Seleccionar orador a seguir;
+  :Registrar orador seguido;
+else (no)
+endif
+
+if (¿Seguir tema de interés?) then (sí)
+  :Seleccionar tema a seguir;
+  :Registrar tema seguido;
+else (no)
+endif
+
+:Actualizar perfil del usuario con preferencias seguidas;
+:Enviar notificaciones relevantes sobre eventos, oradores y temas seguidos;
+
+stop
+@enduml

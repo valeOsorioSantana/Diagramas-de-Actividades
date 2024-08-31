@@ -1,0 +1,24 @@
+@startuml
+start
+:El usuario inicia sesión en la plataforma;
+:El sistema recopila datos de intereses y comportamiento pasado;
+
+:Analizar datos recopilados;
+:Generar lista de eventos recomendados;
+
+if (¿Nuevos intereses?) then (sí)
+  :Actualizar perfil de usuario con nuevos intereses;
+  :Revisar y actualizar recomendaciones;
+else (no)
+endif
+
+:Mostrar recomendaciones personalizadas en la interfaz de usuario;
+
+if (¿Usuario selecciona evento?) then (sí)
+  :Registrar evento seleccionado;
+  :Actualizar comportamiento pasado;
+  :Enviar notificación de confirmación;
+else (no)
+endif
+
+stop

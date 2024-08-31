@@ -1,0 +1,32 @@
+@startuml
+start
+:El usuario inicia sesión en la plataforma;
+:Seleccionar opción para personalizar perfil;
+
+if (¿Editar información personal?) then (sí)
+  :Ingresar nueva información personal;
+  :Guardar cambios en información personal;
+else (no)
+endif
+
+if (¿Cambiar imagen de perfil?) then (sí)
+  :Seleccionar nueva imagen de perfil;
+  :Subir y guardar nueva imagen de perfil;
+else (no)
+endif
+
+if (¿Personalizar preferencias?) then (sí)
+  :Seleccionar preferencias de uso (temas, notificaciones, etc.);
+  :Guardar cambios en preferencias;
+else (no)
+endif
+
+if (¿Agregar información adicional?) then (sí)
+  :Ingresar información adicional (biografía, redes sociales, etc.);
+  :Guardar cambios en información adicional;
+else (no)
+endif
+
+:Confirmar personalización exitosa;
+stop
+@enduml
